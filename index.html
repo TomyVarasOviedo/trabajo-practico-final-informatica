@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="Sitio web con el que se puede aprender sobre los procesadores y su funcionamiento" />
+        <meta name="author" content="Grupo Marzoratti, Ferro, Varas" />
+        <title>Procesadores - Universidad de Belgrano</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/img/universidad.png" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <link href="css/styles.css" rel="stylesheet" />
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="#page-top"><img src="assets/img/universidad.png"  alt="..." /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fas fa-bars ms-1"></i></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#services">¿Que son?</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#process">Proceso</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">Historia</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#team">Autores</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container">
+                <div class="masthead-heading text-uppercase">Procesadores</div>
+                <div class="masthead-subheading fs-2">Componentes y la logica que los rodea</div>
+                <a class="btn btn-primary btn-xl text-uppercase" href="#services">Empezar</a>
+            </div>
+        </header>
+        <!-- Services-->
+        <section class="page-section" >
+            <div class="container" id="services">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">¿Que es la CPU?</h2>
+                    <h3 class="section-subheading text-muted">Unidad Central de Procesamiento</h3>
+                </div>
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <span class="bi bi-circle">
+                            <i class="bi bi-dpad"></i>
+                        </span>
+                        <h4 class="my-3">Unidad de Control</h4>
+                        <p class="text-muted">
+                            <ul style="text-align:justify;" class="text-md-start">
+                                <li>
+                                    Controlar y supervisar todo el sistema de cómputos en base a un programa almacenado en UMC.
+                                </li>
+                                <li>
+                                    Desarrollar las operaciones aritméticas y lógicas que sirven para
+                                    procesar los datos. Controlando las secuencias de ejecución de las
+                                    Instrucciones.
+                                </li>
+                                <li>
+                                    Controlar el envío/recepción de datos desde las unidades de I/O a la UMC, y viceversa, para ello usa el DMA (Direct Memory Access)
+                                </li>
+                            </ul>
+
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="bi bi-circle">
+                            <i class="bi bi-cpu"></i>
+                        </span>
+                        <h4 class="my-3">Unidad Arimético-Lógica</h4>
+                        <p class="text-muted" style="text-align: justify;">
+                            Es el módulo que realiza las Operaciones Matemáticas y Lógicas. 
+                            Tales como suma, resta, multiplicacion, division y lógicas como comparaciones atravez de los datos brindados por la unidad de control codificados de forma binaria.
+
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="bi bi-circle">
+                            <i class="bi bi-sd-card"></i>
+                        </span>
+                        <h4 class="my-3">Unidad de Memoria</h4>
+                        <p class="text-muted" style="text-align: justify;">
+                            Este módulo está compuesto por un mapeo de ROM y RAM (Memoria Volátil). Guarda los programas que se van a ejecutar. 
+                            Almacena Instrucciones, datos, y otras direcciones. Se constituye en registros de UMC, compuestos por celdas, y son de longitud fija. 
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Proceso section -->
+        <section class="page-section">
+            <div class="container-fluid" id="process">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Proceso</h2>
+                    <h3 class="section-subheading text-muted">
+                        Los datos son recibidos a través de los buses a las unidades
+                        para ser procesados y utilizados para el funcionamiento de el dispostivo
+                    </h3>
+                </div>
+                <div class="row jusify-content-center text-center position-relative align-items-center content">
+                    <i class="bi bi-circle-fill"></i>
+                    <div class="col-md-4 unidades">
+                        <img src="assets/img/portfolio/uc.png" data-titulo="Unidad de Control"  data-text="La unidad de control recibe los datos Y los envia a la unidad aritmeticá lógica" alt="">
+                        <button class="btn btn-info">ver mas</button>
+                    </div>
+                    <div class="col-md-4 unidades">
+                        <img src="assets/img/portfolio/alu.png" data-titulo="Unidad Aritmetica lógica" data-text="La unidad recibe los datos de la unidad de control y las procesa através de las compuestas y el sitema binario, y envia los resultados a la unidad de memoria"  alt="">
+                        <button class="btn btn-info">ver mas</button>
+                    </div>
+                    <div class="col-md-4 unidades">
+                        <img src="assets/img/portfolio/um.jpg" data-titulo="Unidad de Memoria"  data-text="Al recibir los datos de la unidad aritmeticá lógica, se encarga de guardar los resultados para que en caso de  ser pedidos por la unidad anterior o ser guardados en componentes fisícos" alt="">
+                        <button class="btn btn-info">ver mas</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About-->
+        <section class="page-section" >
+            <div class="container" id="about">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Evolucion de los procesadores</h2>
+                    <h3 class="section-subheading text-muted">Como avanzaron los procesadores a través del tiempo desde su inicio</h3>
+                </div>
+                <ul class="timeline row justify-content-center">
+                    <li class="col-3">
+                        <div class="timeline-image" data-titulo="Intel 4040" 
+                        data-text="<ul class='text-start'>
+                                        <li>Freceuncia: 740 kHz</li>
+                                        <li>Transistores:  2.300 transistores</li>
+                                        <li>Ancho en bits:	4 bits</li>
+                                    </ul>">
+                            <img class="rounded-circle img-fluid" src="assets/img/about/intel_4040.jpg" alt="..." />
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4></h4>
+                                <h4 class="subheading"></h4>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted col-3">
+                        <div class="timeline-image" data-titulo="Intel 8008" 
+                        data-text="<ul class='text-start'>
+                                        <li>Freceuncia: 0.8MHz</li>
+                                        <li>Transistores: 3.500 transistores</li>
+                                        <li>Ancho en bits:	8 bits</li>
+                                    </ul>">
+                            <img class="rounded-circle img-fluid" src="assets/img/about/intel 8008.jpg" alt="..." />
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4></h4>
+                                <h4 class="subheading"></h4>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col-3">
+                        <div class="timeline-image" data-titulo="SC/MP" 
+                        data-text="<ul class='text-start'>
+                                        <li>Freceuncia: 0.8MHz</li>
+                                        <li>Transistores:  3.500 transistores</li>
+                                        <li>Ancho en bits:	8 bits</li>
+                                    </ul>">
+                            <img class="rounded-circle img-fluid" src="assets/img/about/SC-MP.jpeg" alt="..." />
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4></h4>
+                                <h4 class="subheading"></h4>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted col-3">
+                        <div class="timeline-image" data-titulo="Motorola 6800" 
+                        data-text="<ul class='text-start'>
+                                        <li>Freceuncia: 1MHz</li>
+                                        <li>Transistores:  6.400 transistores</li>
+                                        <li>Ancho en bits:	16 bits</li>
+                                    </ul>">
+                            <img class="rounded-circle img-fluid" src="assets/img/about/Motorola 6800.jpg" alt="..." />
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4></h4>
+                                <h4 class="subheading"></h4>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted col-3">
+                        <div class="timeline-image" data-titulo="Zilog Z80" 
+                        data-text="<ul class='text-start'>
+                                        <li>Freceuncia: 10MHz</li>
+                                        <li>Transistores: 8500 transistores</li>
+                                        <li>Ancho en bits:	8 bits</li>
+                                    </ul>">
+                            <img class="rounded-circle img-fluid" src="assets/img/about/zilog z80.jpg" alt="..." />
+                        </div>
+                        <li class="timeline-inverted col-3">
+                            <div class="timeline-image" data-titulo="AMDx86" 
+                        data-text="<ul class='text-start'>
+                                        <li>Freceuncia: 30 MHz </li>
+                                        <li>Transistores: 200.000 transistores</li>
+                                        <li>Ancho en bits: 32 bits</li>
+                                    </ul>">
+                                <img class="rounded-circle img-fluid" src="assets/img/about/amd x86.jpg" alt="..." />
+                            </div>
+                        </li>
+                        <li class="timeline-inverted col-3">
+                            <div class="timeline-image" data-titulo="intel Pentium" 
+                            data-text="<ul class='text-start'>
+                                            <li>Freceuncia: 66 MHz</li>
+                                            <li>Transistores:  100.000 transistores</li>
+                                            <li>Ancho en bits:	32 bits</li>
+                                        </ul>">
+                                    <img class="rounded-circle img-fluid" src="assets/img/about/pentium.jpg" alt="..." />
+                            </div>
+                        </li>
+                        <li class="timeline-inverted col-3">
+                            <div class="timeline-image" data-titulo="M1 Ultra Apple" 
+                            data-text="<ul class='text-start'>
+                                            <li>Freceuncia: 3200 MHz</li>
+                                            <li>Transistores:   114 billion transistores</li>
+                                            <li>Ancho en bits:	 512 bits</li>
+                                        </ul>">
+                                <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/m1 ultra.jpg" alt="..." />
+                                </div>   
+                            </div>
+                        </li>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- Cuestionario -->
+        <section class="page-section bg-light">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase col-12">¿Quieres hacer un cuestionario sobre lo que aprendiste?</h2>
+                    <button class="btn btn-info" onclick="cuestionario()">Empezar</button>
+                </div>
+            </div>
+        </section>
+        <!-- Team-->
+        <section class="page-section bg-light" >
+            <div class="container">
+                <div class="text-center" id="team">
+                    <h2 class="section-heading text-uppercase">Autores</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <div class="team-img">
+                                <img class="mx-auto rounded-circle" src="assets/img/team/1.jpeg" alt="..." />
+                            </div>
+                            <h4>Matias Marzorati</h4>
+                            <p class="text-muted">Informacion</p>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Twitter Profile"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Facebook Profile"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand LinkedIn Profile"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <div class="team-img">
+                                <img class="mx-auto rounded-circle" src="assets/img/team/2.jpeg" alt="..." />
+                            </div>
+                            <h4>Tomas Varas</h4>
+                            <p class="text-muted">Programación</p>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen Twitter Profile"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen Facebook Profile"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen LinkedIn Profile"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <div class="team-img">
+                                <img class="mx-auto rounded-circle" src="assets/img/team/3.jpeg" alt="..." />
+                            </div>
+                            <h4>Fedeico Delvaux</h4>
+                            <p class="text-muted">Diseño</p>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker Twitter Profile"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker Facebook Profile"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker LinkedIn Profile"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact-->
+        <section class="page-section" id="contact">
+            <div class="container" >
+                <div class="text-center text-white">
+                    <h2 class="section-heading text-uppercase">Contacto</h2>
+                    <h3 class="section-subheading text-muted">Puedes mandarnos un correo en caso de que no comprendas alguna cosa</h3>
+                </div>
+                <form id="contactForm" method="post">
+                    <div class="row  mb-5 text-white">
+                        <div class="col-md-6 ">
+                            <div class="form-group">
+                                Nombre
+                                <input class="form-control" id="name" type="text" placeholder="Tu nombre" required />
+                            </div> 
+                            <div class="form-group">
+                                Correo Electronico
+                                <input class="form-control" id="email" type="email" placeholder="Tu correo" required />
+                            </div>
+                        </div> 
+                        <div class="col-md-6">
+                            <div class="form-group form-group-textarea mb-md-0">
+                                Mensaje
+                                <textarea class="form-control" id="message"  data-sb-validations="required" required></textarea>
+                                <div class="d-flex justify-content-end"><button class="btn btn-primary m-3 text-uppercase " id="submitButton" type="submit">Enviar</button></div>
+                            </div>
+                        </div>
+                    </div>  
+                </form>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="footer py-4 bg-dark">
+            <div class="container text-white">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 text-lg-start">Copyright &copy; Universidad de Belgrano 2022</div>
+                    <div class="col-lg-4 my-3 my-lg-0">
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="LinkedIn"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <div class="col-lg-4 text-lg-end">
+                        <a class="link-dark text-decoration-none me-3 text-white" href="#!">Privacy Policy</a>
+                        <a class="link-dark text-decoration-none text-white" href="#!">Terms of Use</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <script src="js/cuestionario.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>
